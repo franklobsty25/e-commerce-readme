@@ -1,0 +1,6 @@
+- shipmentsadmincontroller_listshipments
+- shipmentsadmincontroller_create
+- shipmentsadmincontroller_getstats
+- shipmentsadmincontroller_exportshipments
+- shipmentsadmincontroller_getshipment
+- shipmentsadmincontroller_update

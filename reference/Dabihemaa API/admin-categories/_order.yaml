@@ -1,0 +1,11 @@
+- categoriesadmincontroller_getcategories
+- categoriesadmincontroller_createcategory
+- categoriesadmincontroller_getstats
+- categoriesadmincontroller_exportcategories
+- categoriesadmincontroller_getcategory
+- categoriesadmincontroller_updatecategory
+- categoriesadmincontroller_deletecategory
+- categoriesadmincontroller_getcategoryproducts
+- categoriesadmincontroller_createsubcategory
+- categoriesadmincontroller_updatesubcategory
+- categoriesadmincontroller_deletesubcategory

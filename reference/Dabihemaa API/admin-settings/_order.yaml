@@ -1,0 +1,4 @@
+- storesettingsadmincontroller_getsettings
+- storesettingsadmincontroller_updatesettings
+- currencycontroller_updatecurrency
+- currencycontroller_upsertrate

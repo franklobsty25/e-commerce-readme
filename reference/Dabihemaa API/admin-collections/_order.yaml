@@ -1,0 +1,5 @@
+- collectionsadmincontroller_findall
+- collectionsadmincontroller_create
+- collectionsadmincontroller_findone
+- collectionsadmincontroller_update
+- collectionsadmincontroller_delete

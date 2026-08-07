@@ -1,0 +1,5 @@
+- ratescontroller_create
+- ratescontroller_findall
+- ratescontroller_findone
+- ratescontroller_update
+- ratescontroller_delete

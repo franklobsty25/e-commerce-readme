@@ -1,0 +1,5 @@
+- sizesadmincontroller_findall
+- sizesadmincontroller_create
+- sizesadmincontroller_findone
+- sizesadmincontroller_update
+- sizesadmincontroller_delete
