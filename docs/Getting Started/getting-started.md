@@ -56,8 +56,8 @@ API keys and OAuth tokens are also bound to a store. Missing store context on te
 
 ## Next steps
 
-1. [Quickstart](quickstart.md) — make your first authenticated call
-2. [Authentication](authentication.md) — API keys, OAuth, and scopes
+1. <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/quickstart">Quickstart</Anchor> — make your first authenticated call
+2. <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor> — API keys, OAuth, and scopes
 3. Browse the **API Reference** (Storefront and Admin OpenAPI specs)
 
 <br />
