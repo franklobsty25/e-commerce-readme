@@ -94,6 +94,6 @@ There is no “reveal again” endpoint for the raw secret.
 
 ## Related
 
-- [Quickstart](quickstart.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/getting-started">Quickstart</Anchor>
 - [OAuth Apps](oauth-apps.md) — for multi-merchant partner apps
 - [Rate Limits](rate-limits.md)
