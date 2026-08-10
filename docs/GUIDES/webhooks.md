@@ -94,4 +94,4 @@ Uninstalling an app (`DELETE /api/v1/admin/apps/installations/:id`) revokes toke
 ## Related
 
 - [OAuth Apps](../getting-started/oauth-apps.md)
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/creating-orders">Creating Orders</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor>
