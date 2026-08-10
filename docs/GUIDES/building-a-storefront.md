@@ -108,4 +108,4 @@ Details: <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_G
 - [Managing Products](managing-products.md)
 - [Creating Orders](creating-orders.md)
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/processing-payments">Processing Payments</Anchor>
-- [Webhooks](webhooks.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
