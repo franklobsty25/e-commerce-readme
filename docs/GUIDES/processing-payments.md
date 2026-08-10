@@ -69,7 +69,7 @@ These are for the platform to confirm charges with Paystack / Hubtel / Stripe. *
 
 ## Related
 
-- [Creating Orders](creating-orders.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/creating-orders">Creating Orders</Anchor>
 - [Webhooks](webhooks.md)
 - Storefront tag: **Integrations Payments**
 - Admin tag: **Integrations Admin Payments**
