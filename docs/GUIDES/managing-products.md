@@ -76,7 +76,7 @@ Stock and availability updates are covered in [Managing Inventory](managing-inve
 
 ## Related
 
-- [Managing Inventory](managing-inventory.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/managing-inventory">Managing Inventory</Anchor>
 - [Building a Storefront](building-a-storefront.md)
 - Admin OpenAPI tag: **Integrations Admin Products**
 - Storefront OpenAPI tag: **Integrations Products**
