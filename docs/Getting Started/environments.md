@@ -50,6 +50,6 @@ when Host does not already resolve the tenant.
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/quickstart">Quickstart</Anchor>
-- [Rate Limits](rate-limits.md)
-- [Errors](errors.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/quickstart">Quickstart</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits">Rate Limits</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/errors">Errors</Anchor>
