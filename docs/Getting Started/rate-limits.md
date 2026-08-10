@@ -47,4 +47,4 @@ Content-Type: application/json
 ## Related
 
 - [Errors](errors.md)
-- [Authentication](authentication.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/authentication">Authentication</Anchor>
