@@ -82,7 +82,7 @@ Scopes are enforced per route. Common patterns:
 | Inventory sync    | `products:read`, `products:write`                                                                  |
 | Full access       | `*`                                                                                                |
 
-See [Authentication](authentication.md) for the full list.
+See <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/authentication">Authentication</Anchor> for the full list.
 
 ## Rotation
 
