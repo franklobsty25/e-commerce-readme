@@ -1,14 +1,14 @@
 ---
 title: Introduction
+excerpt: >-
+  Welcome to the E-commerce Integrations API — the primary surface for external
+  developers, partner apps, and headless clients that need to read and write
+  store data programmatically.
 deprecated: false
 hidden: false
 metadata:
   robots: index
 ---
-# Introduction
-
-Welcome to the **Integrations API** — the primary surface for external developers, partner apps, and headless clients that need to read and write store data programmatically.
-
 ## What this API is for
 
 Use the Integrations API when you are building:
