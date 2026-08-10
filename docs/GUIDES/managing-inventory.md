@@ -54,5 +54,5 @@ Use availability to stop selling a product without deleting it; use stock for qu
 ## Related
 
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-products">Managing Products</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor>
