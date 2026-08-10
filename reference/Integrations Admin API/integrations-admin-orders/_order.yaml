@@ -1,0 +1,4 @@
+- ordersadminintegrationscontroller_listorders
+- ordersadminintegrationscontroller_getstats
+- ordersadminintegrationscontroller_exportorders
+- ordersadminintegrationscontroller_getorder
