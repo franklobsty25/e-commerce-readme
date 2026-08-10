@@ -1,71 +1,62 @@
 ---
-title: Welcome to Benchfive Commerce
+title: Welcome to Benchfive Commerce Integrations API
+excerpt: >-
+  The primary surface for external developers, partner apps, and headless
+  clients that need to read and write store data programmatically.
 hidden: false
 ---
-<Callout icon="📘" theme="info">
-  ### Integrations/partner API
+## What this API is for
 
-  **Template:**  Delete this callout and edit this page with your content and links.
-</Callout>
+Use the Integrations API when you are building:
 
-<Cards>
-  <Card title="Quick Start" href="#" icon="fa-duotone fa-rocket-launch">
-    Learn how to get started with our product
-  </Card>
+- A custom storefront or mobile app
+- An ERP, inventory, or fulfilment sync
+- A partner app installed on merchant stores
+- Automation that creates or updates orders, products, or customers
 
-  <Card title="API Reference" href="#" icon="fa-duotone fa-code-simple">
-    Explore endpoints and build your integration
-  </Card>
+All Integrations routes live under:
 
-  <Card title="Build with AI" href="#" icon="fa-duotone fa-sparkles">
-    Use LLM features to automate your workflow
-  </Card>
-</Cards>
+```text
+/api/v1/integrations
+```
+
+## Two reference surfaces
+
+The Integrations OpenAPI is split so you can find the right endpoints quickly:
+
+| Surface        | Base path                        | Typical use                                                                                             |
+| -------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Storefront** | `/api/v1/integrations/...`       | Catalog reads, cart, checkout (create order), payments verify, shipping rates, themes, gallery, contact |
+| **Admin**      | `/api/v1/integrations/admin/...` | Product/inventory CRUD, order management, customers, shipping settings, refunds, dashboard              |
+
+Both surfaces use the **same authentication** (API key or OAuth) and **scopes**. Admin routes generally need write scopes (for example `products:write`).
+
+## How this differs from other APIs
+
+| Audience                        | Auth                                                  | Docs                                   |
+| ------------------------------- | ----------------------------------------------------- | -------------------------------------- |
+| **Integrations** (you are here) | `X-Api-Key` (`sk_test_` / `sk_live_`) or OAuth Bearer | This portal                            |
+| Cookie storefront               | Guest session cookie                                  | Internal Store API (`/api/docs`)       |
+| Merchant dashboard              | Merchant JWT                                          | Internal Admin API (`/api/docs/admin`) |
+
+External developers should prefer the Integrations API. Do not use guest session headers for partner integrations.
+
+## Multi-tenant store context
+
+Every request is scoped to a single store. Provide store context with:
+
+- `X-Store-Slug` (preferred), or
+- `X-Store-Id` (store `publicId` UUID), or
+- a Host / custom domain that already resolves to a store
+
+API keys and OAuth tokens are also bound to a store. Missing store context on tenant routes returns `400 Bad Request`.
+
+## Next steps
+
+1. [Quickstart](quickstart.md) — make your first authenticated call
+2. [Authentication](authentication.md) — API keys, OAuth, and scopes
+3. Browse the **API Reference** (Storefront and Admin OpenAPI specs)
 
 <br />
 
-## Recent Releases
-
-<Cards>
-  <Card title="v2.0 Migration" href="#" icon="fa-duotone fa-magnifying-glass" kind="tile">
-    Everything you need to upgrade
-  </Card>
-
-  <Card title="Webhooks" href="#" icon="fa-duotone fa-bullhorn" kind="tile">
-    Real-time events are now available
-  </Card>
-
-  <Card title="Android SDK" href="#" icon="fa-duotone fa-robot" kind="tile">
-    Our native Android library is out of beta
-  </Card>
-</Cards>
-
 <br />
-
-## The Basics
-
-<Cards>
-  <Card title="Customize" href="#" icon="fa-duotone fa-brush" kind="tile">
-    Style the widget to match your brand
-  </Card>
-
-  <Card title="Integrations" href="#" icon="fa-duotone fa-arrow-down-left-and-arrow-up-right-to-center" kind="tile">
-    Connect with third-party services
-  </Card>
-
-  <Card title="CLI" href="#" icon="fa-duotone fa-terminal" kind="tile">
-    Manage resources from your terminal
-  </Card>
-
-  <Card title="Security" icon="fa-duotone fa-shield-dog" kind="tile">
-    Learn how we secure your data
-  </Card>
-
-  <Card title="Common Issues" icon="fa-duotone fa-file-circle-info" kind="tile">
-    Troubleshoot common issues
-  </Card>
-
-  <Card title="Sync" href="#" icon="fa-duotone fa-code-compare" kind="tile">
-    Connect to a storage provider
-  </Card>
-</Cards>
