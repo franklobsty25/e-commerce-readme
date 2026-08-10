@@ -112,7 +112,7 @@ Required scope: `products:write`.
 
 ## Next steps
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/authentication">Authentication</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor>
-- [Building a Storefront](../guides/building-a-storefront.md)
-- [Webhooks](../guides/webhooks.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/api-keys">API Keys</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront">Building a Storefront</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
