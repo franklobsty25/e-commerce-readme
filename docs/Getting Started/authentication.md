@@ -29,7 +29,7 @@ Authorization: Bearer sk_test_...
 
 Keys are stored as hashes. The raw secret is shown only at creation time. Revoked, expired, or suspended keys return `401 Unauthorized`.
 
-See <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor> for creation, scopes, and rotation.
+See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/api-keys">API Keys</Anchor> for creation, scopes, and rotation.
 
 ## OAuth access token
 
@@ -41,7 +41,7 @@ Authorization: Bearer <oauth_access_token>
 
 Do **not** use an `sk_*` value on the OAuth path. OAuth tokens carry the scopes granted at install/authorize time.
 
-See [OAuth Apps](oauth-apps.md).
+See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/oauth-apps">OAuth Apps</Anchor>.
 
 ## How the guard resolves credentials
 
@@ -110,6 +110,6 @@ API keys and OAuth installations are already bound to one store; headers disambi
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor>
-- [OAuth Apps](oauth-apps.md)
-- [Errors](errors.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/api-keys">API Keys</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/oauth-apps">OAuth Apps</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/errors">Errors</Anchor>
