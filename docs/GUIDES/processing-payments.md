@@ -65,11 +65,11 @@ The platform also receives **inbound** payment webhooks from providers:
 - `POST /api/v1/hubtel-webhook`
 - `POST /api/v1/stripe-webhook`
 
-These are for the platform to confirm charges with Paystack / Hubtel / Stripe. **Your app should not call them.** For partner notifications, use outbound [Webhooks](webhooks.md) (`orders/create`).
+These are for the platform to confirm charges with Paystack / Hubtel / Stripe. **Your app should not call them.** For partner notifications, use outbound [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks) (`orders/create`).
 
 ## Related
 
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
 - Storefront tag: **Integrations Payments**
 - Admin tag: **Integrations Admin Payments**
