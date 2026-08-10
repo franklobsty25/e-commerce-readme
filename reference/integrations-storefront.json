@@ -2781,6 +2781,10 @@
           "slug": {
             "type": "string",
             "example": "acme-apparel"
+          },
+          "logoUrl": {
+            "type": "string",
+            "example": "https://cdn.example.com/logo.png"
           }
         },
         "required": [
@@ -4611,10 +4615,22 @@
         "properties": {
           "method": {
             "type": "string",
+            "enum": [
+              "local-ghana",
+              "store-pickup",
+              "africa-shipping",
+              "international-shipping"
+            ],
             "example": "local-ghana"
           },
           "productCode": {
             "type": "string",
+            "enum": [
+              "LOCAL_GHANA",
+              "STORE_PICKUP",
+              "AFRICA_SHIPPING",
+              "INTERNATIONAL_SHIPPING"
+            ],
             "example": "LOCAL_GHANA"
           },
           "productName": {
