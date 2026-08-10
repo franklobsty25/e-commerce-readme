@@ -139,5 +139,5 @@ Uninstall revokes tokens and deactivates related webhook subscriptions for that 
 ## Related
 
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/authentication">Authentication</Anchor>
-- [API Keys](api-keys.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor>
 - [Webhooks](../guides/webhooks.md)
