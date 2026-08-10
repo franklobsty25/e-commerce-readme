@@ -163,4 +163,4 @@ Continue with [Processing Payments](processing-payments.md) to verify payment st
 
 - [Processing Payments](processing-payments.md)
 - [Building a Storefront](building-a-storefront.md)
-- [Webhooks](webhooks.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
