@@ -1,7 +1,7 @@
 ---
 title: Introduction
 excerpt: >-
-  Welcome to the Benchfive E-commerce Integrations API — the primary surface for
+  Welcome to the Benchfive Commerce Integrations API — the primary surface for
   external developers, partner apps, and headless clients that need to read and
   write store data programmatically.
 hidden: false
