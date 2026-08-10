@@ -162,5 +162,5 @@ Continue with [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUID
 ## Related
 
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments">Processing Payments</Anchor>
-- [Building a Storefront](building-a-storefront.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront">Building a Storefront</Anchor>
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
