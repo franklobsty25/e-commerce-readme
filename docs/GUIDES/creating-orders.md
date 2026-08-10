@@ -157,10 +157,10 @@ Successful order creation may:
 1. Return payment redirect/provider details for the shopper
 2. Dispatch outbound webhook topic `orders/create` to installed apps (see [Webhooks](webhooks.md))
 
-Continue with [Processing Payments](processing-payments.md) to verify payment status.
+Continue with [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments) to verify payment status.
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/processing-payments">Processing Payments</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments">Processing Payments</Anchor>
 - [Building a Storefront](building-a-storefront.md)
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
