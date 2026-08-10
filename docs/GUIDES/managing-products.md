@@ -72,7 +72,7 @@ Product images are attached through Admin product image endpoints. Uploaded file
 
 ## Inventory
 
-Stock and availability updates are covered in [Managing Inventory](managing-inventory.md).
+Stock and availability updates are covered in <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-inventory">Managing Inventory</Anchor>.
 
 ## Related
 
