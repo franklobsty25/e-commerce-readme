@@ -83,7 +83,7 @@ PATCH /api/v1/integrations/carts/{id}
 POST /api/v1/integrations/orders
 ```
 
-See [Creating Orders](creating-orders.md) for the full order body (including required `variants` on each item).
+See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor> for the full order body (including required `variants` on each item).
 
 ## 5. Shipping and discounts
 
@@ -106,6 +106,6 @@ Details: <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_G
 ## Related guides
 
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-products">Managing Products</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/creating-orders">Creating Orders</Anchor>
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor>
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/processing-payments">Processing Payments</Anchor>
 - <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/webhooks">Webhooks</Anchor>
