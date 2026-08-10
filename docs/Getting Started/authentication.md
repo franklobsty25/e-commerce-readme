@@ -29,7 +29,7 @@ Authorization: Bearer sk_test_...
 
 Keys are stored as hashes. The raw secret is shown only at creation time. Revoked, expired, or suspended keys return `401 Unauthorized`.
 
-See [API Keys](api-keys.md) for creation, scopes, and rotation.
+See <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor> for creation, scopes, and rotation.
 
 ## OAuth access token
 
@@ -110,6 +110,6 @@ API keys and OAuth installations are already bound to one store; headers disambi
 
 ## Related
 
-- [API Keys](api-keys.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor>
 - [OAuth Apps](oauth-apps.md)
 - [Errors](errors.md)
