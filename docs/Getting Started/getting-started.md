@@ -5,6 +5,8 @@ excerpt: >-
   external developers, partner apps, and headless clients that need to read and
   write store data programmatically.
 hidden: false
+metadata:
+  title: Benchfive Commerce
 ---
 ## What this API is for
 
