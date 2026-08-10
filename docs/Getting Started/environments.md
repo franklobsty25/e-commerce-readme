@@ -23,10 +23,10 @@ All Integrations paths are versioned:
 
 ## Test vs live API keys
 
-| Key prefix | Issued when     |
-| ---------- | --------------- |
-| `sk_test_` | Non-production  |
-| `sk_live_` | Production      |
+| Key prefix | Issued when    |
+| ---------- | -------------- |
+| `sk_test_` | Non-production |
+| `sk_live_` | Production     |
 
 Use test keys against non-production API hosts. Do not mix live keys with staging hosts (or the reverse).
 
@@ -50,6 +50,6 @@ when Host does not already resolve the tenant.
 
 ## Related
 
-- [Quickstart](quickstart.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/quickstart">Quickstart</Anchor>
 - [Rate Limits](rate-limits.md)
 - [Errors](errors.md)
