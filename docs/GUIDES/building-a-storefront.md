@@ -95,7 +95,7 @@ Use Storefront shipping and discounts endpoints to quote rates and validate code
 2. Redirect the shopper
 3. `GET /api/v1/integrations/payments/verify/{reference}`
 
-Details: [Processing Payments](processing-payments.md).
+Details: <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/processing-payments">Processing Payments</Anchor>.
 
 ## Security notes
 
@@ -107,5 +107,5 @@ Details: [Processing Payments](processing-payments.md).
 
 - [Managing Products](managing-products.md)
 - [Creating Orders](creating-orders.md)
-- [Processing Payments](processing-payments.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/update/docs/processing-payments">Processing Payments</Anchor>
 - [Webhooks](webhooks.md)
