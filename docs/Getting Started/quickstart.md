@@ -112,7 +112,7 @@ Required scope: `products:write`.
 
 ## Next steps
 
-- [Authentication](authentication.md)
-- [API Keys](api-keys.md)
+- [Authentication]()
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/api-keys">API Keys</Anchor>
 - [Building a Storefront](../guides/building-a-storefront.md)
 - [Webhooks](../guides/webhooks.md)
