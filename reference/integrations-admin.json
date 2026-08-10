@@ -3270,6 +3270,44 @@
         ]
       }
     },
+    "/integrations/admin/notifications/stats": {
+      "get": {
+        "operationId": "NotificationsAdminIntegrationsController_stats",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key (notifications resolve to the key creator user). OAuth tokens are not supported for this resource.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Flat counts: unread, orders, products, system"
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Notification KPI counts for Unread / Orders / Products / System",
+        "tags": [
+          "Integrations Admin Notifications"
+        ]
+      }
+    },
     "/integrations/admin/notifications/unread-count": {
       "get": {
         "operationId": "NotificationsAdminIntegrationsController_unreadCount",
@@ -4463,6 +4501,190 @@
         ]
       }
     },
+    "/integrations/admin/team/members": {
+      "get": {
+        "operationId": "TeamIntegrationsController_list",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key (team actions resolve to the key creator user). OAuth tokens are not supported for this resource.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Team members"
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "List store team members",
+        "tags": [
+          "Integrations Admin Team"
+        ]
+      },
+      "post": {
+        "operationId": "TeamIntegrationsController_add",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key (team actions resolve to the key creator user). OAuth tokens are not supported for this resource.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddTeamMemberDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Member added"
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Invite or add a team member",
+        "tags": [
+          "Integrations Admin Team"
+        ]
+      }
+    },
+    "/integrations/admin/team/members/{userId}": {
+      "patch": {
+        "operationId": "TeamIntegrationsController_updateRole",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key (team actions resolve to the key creator user). OAuth tokens are not supported for this resource.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTeamMemberRoleDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Role updated"
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Update a team member role (ADMIN ↔ STAFF)",
+        "tags": [
+          "Integrations Admin Team"
+        ]
+      },
+      "delete": {
+        "operationId": "TeamIntegrationsController_remove",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key (team actions resolve to the key creator user). OAuth tokens are not supported for this resource.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "userId",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member removed"
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Remove a team member",
+        "tags": [
+          "Integrations Admin Team"
+        ]
+      }
+    },
     "/integrations/admin/dashboard/stats": {
       "get": {
         "operationId": "AdminIntegrationsController_getDashboardStats",
@@ -5462,6 +5684,9 @@
       "name": "Integrations Admin Notifications"
     },
     {
+      "name": "Integrations Admin Team"
+    },
+    {
       "name": "Integrations Admin Subscribers"
     }
   ],
@@ -5921,6 +6146,10 @@
           "slug": {
             "type": "string",
             "example": "acme-apparel"
+          },
+          "logoUrl": {
+            "type": "string",
+            "example": "https://cdn.example.com/logo.png"
           }
         },
         "required": [
@@ -7751,10 +7980,22 @@
         "properties": {
           "method": {
             "type": "string",
+            "enum": [
+              "local-ghana",
+              "store-pickup",
+              "africa-shipping",
+              "international-shipping"
+            ],
             "example": "local-ghana"
           },
           "productCode": {
             "type": "string",
+            "enum": [
+              "LOCAL_GHANA",
+              "STORE_PICKUP",
+              "AFRICA_SHIPPING",
+              "INTERNATIONAL_SHIPPING"
+            ],
             "example": "LOCAL_GHANA"
           },
           "productName": {
@@ -8153,6 +8394,45 @@
             "example": true
           }
         }
+      },
+      "AddTeamMemberDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "example": "teammate@example.com"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "ADMIN",
+              "STAFF"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "example": "Ama Mensah"
+          }
+        },
+        "required": [
+          "email",
+          "role"
+        ]
+      },
+      "UpdateTeamMemberRoleDto": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "ADMIN",
+              "STAFF"
+            ]
+          }
+        },
+        "required": [
+          "role"
+        ]
       },
       "CreateCollectionDto": {
         "type": "object",
