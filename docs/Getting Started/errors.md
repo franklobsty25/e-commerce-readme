@@ -66,5 +66,5 @@ Invalid JSON bodies or fields that fail class-validator rules return `400` with 
 
 ## Related
 
-- [Authentication](authentication.md)
+- <Anchor target="_blank" href="https://benchfive-commer.readme.io/update/docs/authentication">Authentication</Anchor>
 - [Rate Limits](rate-limits.md)
