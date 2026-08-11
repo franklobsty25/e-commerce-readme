@@ -35,7 +35,7 @@
         ],
         "summary": "Get store settings",
         "tags": [
-          "Integrations Admin Settings"
+          "Admin Settings"
         ]
       },
       "patch": {
@@ -81,7 +81,7 @@
         ],
         "summary": "Update store settings",
         "tags": [
-          "Integrations Admin Settings"
+          "Admin Settings"
         ]
       }
     },
@@ -119,7 +119,7 @@
         ],
         "summary": "Get store marketing settings and scripts",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       },
       "patch": {
@@ -165,7 +165,7 @@
         ],
         "summary": "Update store marketing pixel IDs and CAPI tokens",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       }
     },
@@ -203,7 +203,7 @@
         ],
         "summary": "List custom marketing scripts",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       },
       "post": {
@@ -249,7 +249,7 @@
         ],
         "summary": "Create a custom marketing script",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       }
     },
@@ -305,7 +305,7 @@
         ],
         "summary": "Update a custom marketing script",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       },
       "delete": {
@@ -349,7 +349,7 @@
         ],
         "summary": "Delete a custom marketing script",
         "tags": [
-          "Integrations Admin Marketing"
+          "Admin Marketing"
         ]
       }
     },
@@ -397,7 +397,7 @@
         ],
         "summary": "Update store presentment currency",
         "tags": [
-          "Integrations Admin Settings"
+          "Admin Settings"
         ]
       }
     },
@@ -445,7 +445,7 @@
         ],
         "summary": "Upsert a manual exchange rate",
         "tags": [
-          "Integrations Admin Settings"
+          "Admin Settings"
         ]
       }
     },
@@ -483,7 +483,7 @@
         ],
         "summary": "Admin draft + live theme",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       },
       "put": {
@@ -529,7 +529,7 @@
         ],
         "summary": "Update draft theme tokens",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       }
     },
@@ -567,7 +567,7 @@
         ],
         "summary": "Publish draft theme to live",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       }
     },
@@ -605,7 +605,7 @@
         ],
         "summary": "List admin pages",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       },
       "post": {
@@ -651,7 +651,7 @@
         ],
         "summary": "Create a page",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       }
     },
@@ -697,7 +697,7 @@
         ],
         "summary": "Get admin page by id",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       },
       "patch": {
@@ -751,7 +751,7 @@
         ],
         "summary": "Update a page",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       },
       "delete": {
@@ -795,7 +795,7 @@
         ],
         "summary": "Delete a page",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       }
     },
@@ -841,7 +841,7 @@
         ],
         "summary": "Publish a page",
         "tags": [
-          "Integrations Admin Themes"
+          "Admin Themes"
         ]
       }
     },
@@ -930,7 +930,7 @@
         ],
         "summary": "List store customers (paginated, filterable)",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       }
     },
@@ -968,7 +968,7 @@
         ],
         "summary": "Get customer KPI stats",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       }
     },
@@ -1057,7 +1057,7 @@
         ],
         "summary": "Export customers as CSV",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       }
     },
@@ -1104,7 +1104,7 @@
         ],
         "summary": "Export a customer order history as CSV",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       }
     },
@@ -1169,7 +1169,7 @@
         ],
         "summary": "Get customer details with stats and paginated order history",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       },
       "patch": {
@@ -1223,7 +1223,7 @@
         ],
         "summary": "Enable/disable customer",
         "tags": [
-          "Integrations Admin Customers"
+          "Admin Customers"
         ]
       }
     },
@@ -1321,7 +1321,7 @@
         ],
         "summary": "List community subscribers (paginated, filterable)",
         "tags": [
-          "Integrations Admin Subscribers"
+          "Admin Subscribers"
         ]
       }
     },
@@ -1434,7 +1434,7 @@
         ],
         "summary": "List discounts (paginated, filterable)",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       },
       "post": {
@@ -1480,7 +1480,7 @@
         ],
         "summary": "Create a discount",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       }
     },
@@ -1518,7 +1518,7 @@
         ],
         "summary": "Get discount KPI stats",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       }
     },
@@ -1631,7 +1631,7 @@
         ],
         "summary": "Export discounts as CSV",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       }
     },
@@ -1678,7 +1678,7 @@
         ],
         "summary": "Get a discount by ID",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       },
       "patch": {
@@ -1733,7 +1733,7 @@
         ],
         "summary": "Update a discount",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
         ]
       },
       "delete": {
@@ -1778,7 +1778,55 @@
         ],
         "summary": "Delete a discount",
         "tags": [
-          "Integrations Admin Discounts"
+          "Admin Discounts"
+        ]
+      }
+    },
+    "/integrations/admin/discounts/bulk": {
+      "delete": {
+        "operationId": "DiscountsAdminIntegrationsController_bulkRemove",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete discounts",
+        "tags": [
+          "Admin Discounts"
         ]
       }
     },
@@ -1880,7 +1928,7 @@
         ],
         "summary": "List categories (paginated, filterable)",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       },
       "post": {
@@ -1926,7 +1974,7 @@
         ],
         "summary": "Create a category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       }
     },
@@ -1964,7 +2012,7 @@
         ],
         "summary": "Get category KPI stats",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       }
     },
@@ -2066,7 +2114,7 @@
         ],
         "summary": "Export categories as CSV",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       }
     },
@@ -2113,7 +2161,7 @@
         ],
         "summary": "Get category by id",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       },
       "patch": {
@@ -2168,7 +2216,7 @@
         ],
         "summary": "Update a category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       },
       "delete": {
@@ -2213,7 +2261,7 @@
         ],
         "summary": "Delete a category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       }
     },
@@ -2278,7 +2326,55 @@
         ],
         "summary": "List products in a category (admin)",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
+        ]
+      }
+    },
+    "/integrations/admin/categories/bulk": {
+      "delete": {
+        "operationId": "CategoriesAdminIntegrationsController_bulkDeleteCategories",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete categories",
+        "tags": [
+          "Admin Categories"
         ]
       }
     },
@@ -2335,7 +2431,7 @@
         ],
         "summary": "Create a sub-category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       }
     },
@@ -2401,7 +2497,7 @@
         ],
         "summary": "Update a sub-category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
         ]
       },
       "delete": {
@@ -2455,7 +2551,64 @@
         ],
         "summary": "Delete a sub-category",
         "tags": [
-          "Integrations Admin Categories"
+          "Admin Categories"
+        ]
+      }
+    },
+    "/integrations/admin/categories/{id}/sub-categories/bulk": {
+      "delete": {
+        "operationId": "CategoriesAdminIntegrationsController_bulkDeleteSubCategories",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": 1,
+              "type": "number"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete sub-categories",
+        "tags": [
+          "Admin Categories"
         ]
       }
     },
@@ -2599,7 +2752,7 @@
         ],
         "summary": "List all products (integration admin)",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       },
       "post": {
@@ -2645,7 +2798,7 @@
         ],
         "summary": "Create a product",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -2683,7 +2836,7 @@
         ],
         "summary": "Get product KPI stats",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -2827,7 +2980,7 @@
         ],
         "summary": "Export products as CSV",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -2874,7 +3027,7 @@
         ],
         "summary": "Get product by id (integration admin)",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       },
       "patch": {
@@ -2929,7 +3082,7 @@
         ],
         "summary": "Update a product",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       },
       "delete": {
@@ -2974,7 +3127,55 @@
         ],
         "summary": "Delete a product",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
+        ]
+      }
+    },
+    "/integrations/admin/products/bulk": {
+      "delete": {
+        "operationId": "ProductsAdminIntegrationsController_bulkDeleteProducts",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete products",
+        "tags": [
+          "Admin Products"
         ]
       }
     },
@@ -3031,7 +3232,7 @@
         ],
         "summary": "Update product availability",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -3088,7 +3289,7 @@
         ],
         "summary": "Update product stock",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -3154,7 +3355,7 @@
         ],
         "summary": "Upload product images",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -3210,7 +3411,7 @@
         ],
         "summary": "Delete a product image",
         "tags": [
-          "Integrations Admin Products"
+          "Admin Products"
         ]
       }
     },
@@ -3266,7 +3467,7 @@
         ],
         "summary": "List notifications for the API key creator",
         "tags": [
-          "Integrations Admin Notifications"
+          "Admin Notifications"
         ]
       }
     },
@@ -3304,7 +3505,7 @@
         ],
         "summary": "Notification KPI counts for Unread / Orders / Products / System",
         "tags": [
-          "Integrations Admin Notifications"
+          "Admin Notifications"
         ]
       }
     },
@@ -3342,7 +3543,7 @@
         ],
         "summary": "Unread notification count",
         "tags": [
-          "Integrations Admin Notifications"
+          "Admin Notifications"
         ]
       }
     },
@@ -3390,7 +3591,7 @@
         ],
         "summary": "Mark notifications as read",
         "tags": [
-          "Integrations Admin Notifications"
+          "Admin Notifications"
         ]
       }
     },
@@ -3502,7 +3703,7 @@
         ],
         "summary": "List orders (paginated, filterable)",
         "tags": [
-          "Integrations Admin Orders"
+          "Admin Orders"
         ]
       }
     },
@@ -3540,7 +3741,7 @@
         ],
         "summary": "Get order KPI stats",
         "tags": [
-          "Integrations Admin Orders"
+          "Admin Orders"
         ]
       }
     },
@@ -3652,7 +3853,7 @@
         ],
         "summary": "Export orders as CSV",
         "tags": [
-          "Integrations Admin Orders"
+          "Admin Orders"
         ]
       }
     },
@@ -3699,7 +3900,7 @@
         ],
         "summary": "Get admin order details by order number",
         "tags": [
-          "Integrations Admin Orders"
+          "Admin Orders"
         ]
       }
     },
@@ -3755,7 +3956,7 @@
         ],
         "summary": "List paid orders (integration admin)",
         "tags": [
-          "Integrations Admin Payments"
+          "Admin Payments"
         ]
       }
     },
@@ -3812,7 +4013,7 @@
         ],
         "summary": "Refund a paid order via its payment provider",
         "tags": [
-          "Integrations Admin Payments"
+          "Admin Payments"
         ]
       }
     },
@@ -3850,7 +4051,7 @@
         ],
         "summary": "Get shipping rate settings",
         "tags": [
-          "Integrations Admin Shipping"
+          "Admin Shipping"
         ]
       },
       "patch": {
@@ -3896,7 +4097,7 @@
         ],
         "summary": "Update shipping rate settings",
         "tags": [
-          "Integrations Admin Shipping"
+          "Admin Shipping"
         ]
       }
     },
@@ -3991,7 +4192,7 @@
         ],
         "summary": "List shipments (paginated, filterable)",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       },
       "post": {
@@ -4037,7 +4238,7 @@
         ],
         "summary": "Create a shipment for a paid order",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       }
     },
@@ -4075,7 +4276,7 @@
         ],
         "summary": "Get shipment KPI stats",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       }
     },
@@ -4170,7 +4371,7 @@
         ],
         "summary": "Export shipments as CSV",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       }
     },
@@ -4217,7 +4418,7 @@
         ],
         "summary": "Get shipment details by shipment number",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       }
     },
@@ -4274,7 +4475,7 @@
         ],
         "summary": "Update shipment status, carrier, or dates",
         "tags": [
-          "Integrations Admin Shipments"
+          "Admin Shipments"
         ]
       }
     },
@@ -4349,7 +4550,7 @@
         ],
         "summary": "List carriers (paginated, searchable)",
         "tags": [
-          "Integrations Admin Carriers"
+          "Admin Carriers"
         ]
       },
       "post": {
@@ -4395,7 +4596,7 @@
         ],
         "summary": "Create a carrier",
         "tags": [
-          "Integrations Admin Carriers"
+          "Admin Carriers"
         ]
       }
     },
@@ -4452,7 +4653,7 @@
         ],
         "summary": "Update a carrier",
         "tags": [
-          "Integrations Admin Carriers"
+          "Admin Carriers"
         ]
       },
       "delete": {
@@ -4497,7 +4698,7 @@
         ],
         "summary": "Delete a carrier (soft-deactivates if linked to shipments)",
         "tags": [
-          "Integrations Admin Carriers"
+          "Admin Carriers"
         ]
       }
     },
@@ -4535,7 +4736,7 @@
         ],
         "summary": "List store team members",
         "tags": [
-          "Integrations Admin Team"
+          "Admin Team"
         ]
       },
       "post": {
@@ -4581,7 +4782,7 @@
         ],
         "summary": "Invite or add a team member",
         "tags": [
-          "Integrations Admin Team"
+          "Admin Team"
         ]
       }
     },
@@ -4637,7 +4838,7 @@
         ],
         "summary": "Update a team member role (ADMIN ↔ STAFF)",
         "tags": [
-          "Integrations Admin Team"
+          "Admin Team"
         ]
       },
       "delete": {
@@ -4681,7 +4882,7 @@
         ],
         "summary": "Remove a team member",
         "tags": [
-          "Integrations Admin Team"
+          "Admin Team"
         ]
       }
     },
@@ -4759,7 +4960,7 @@
         ],
         "summary": "Get admin dashboard statistics via API key",
         "tags": [
-          "Integrations Admin Dashboard"
+          "Admin Dashboard"
         ]
       }
     },
@@ -4881,7 +5082,7 @@
         ],
         "summary": "List collections (paginated, filterable)",
         "tags": [
-          "Integrations Admin Collections"
+          "Admin Collections"
         ]
       },
       "post": {
@@ -4927,7 +5128,7 @@
         ],
         "summary": "Create a collection",
         "tags": [
-          "Integrations Admin Collections"
+          "Admin Collections"
         ]
       }
     },
@@ -4974,7 +5175,7 @@
         ],
         "summary": "Get a collection by ID (admin)",
         "tags": [
-          "Integrations Admin Collections"
+          "Admin Collections"
         ]
       },
       "patch": {
@@ -5029,7 +5230,7 @@
         ],
         "summary": "Update a collection",
         "tags": [
-          "Integrations Admin Collections"
+          "Admin Collections"
         ]
       },
       "delete": {
@@ -5074,7 +5275,55 @@
         ],
         "summary": "Delete a collection",
         "tags": [
-          "Integrations Admin Collections"
+          "Admin Collections"
+        ]
+      }
+    },
+    "/integrations/admin/collections/bulk": {
+      "delete": {
+        "operationId": "CollectionsAdminIntegrationsController_bulkDelete",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete collections",
+        "tags": [
+          "Admin Collections"
         ]
       }
     },
@@ -5154,7 +5403,7 @@
         ],
         "summary": "List sizes (paginated, filterable)",
         "tags": [
-          "Integrations Admin Sizes"
+          "Admin Sizes"
         ]
       },
       "post": {
@@ -5200,7 +5449,7 @@
         ],
         "summary": "Create a size",
         "tags": [
-          "Integrations Admin Sizes"
+          "Admin Sizes"
         ]
       }
     },
@@ -5247,7 +5496,7 @@
         ],
         "summary": "Get a size by ID (admin)",
         "tags": [
-          "Integrations Admin Sizes"
+          "Admin Sizes"
         ]
       },
       "patch": {
@@ -5302,7 +5551,7 @@
         ],
         "summary": "Update a size",
         "tags": [
-          "Integrations Admin Sizes"
+          "Admin Sizes"
         ]
       },
       "delete": {
@@ -5347,7 +5596,55 @@
         ],
         "summary": "Delete a size",
         "tags": [
-          "Integrations Admin Sizes"
+          "Admin Sizes"
+        ]
+      }
+    },
+    "/integrations/admin/sizes/bulk": {
+      "delete": {
+        "operationId": "SizesAdminIntegrationsController_bulkDelete",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete sizes",
+        "tags": [
+          "Admin Sizes"
         ]
       }
     },
@@ -5427,7 +5724,7 @@
         ],
         "summary": "List colors (paginated, filterable)",
         "tags": [
-          "Integrations Admin Colors"
+          "Admin Colors"
         ]
       },
       "post": {
@@ -5473,7 +5770,7 @@
         ],
         "summary": "Create a color",
         "tags": [
-          "Integrations Admin Colors"
+          "Admin Colors"
         ]
       }
     },
@@ -5520,7 +5817,7 @@
         ],
         "summary": "Get a color by ID (admin)",
         "tags": [
-          "Integrations Admin Colors"
+          "Admin Colors"
         ]
       },
       "patch": {
@@ -5575,7 +5872,7 @@
         ],
         "summary": "Update a color",
         "tags": [
-          "Integrations Admin Colors"
+          "Admin Colors"
         ]
       },
       "delete": {
@@ -5620,7 +5917,55 @@
         ],
         "summary": "Delete a color",
         "tags": [
-          "Integrations Admin Colors"
+          "Admin Colors"
+        ]
+      }
+    },
+    "/integrations/admin/colors/bulk": {
+      "delete": {
+        "operationId": "ColorsAdminIntegrationsController_bulkDelete",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BulkDeleteDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Bulk delete colors",
+        "tags": [
+          "Admin Colors"
         ]
       }
     }
@@ -5633,61 +5978,61 @@
   },
   "tags": [
     {
-      "name": "Integrations Admin Products"
+      "name": "Admin Products"
     },
     {
-      "name": "Integrations Admin Categories"
+      "name": "Admin Categories"
     },
     {
-      "name": "Integrations Admin Collections"
+      "name": "Admin Collections"
     },
     {
-      "name": "Integrations Admin Colors"
+      "name": "Admin Colors"
     },
     {
-      "name": "Integrations Admin Sizes"
+      "name": "Admin Sizes"
     },
     {
-      "name": "Integrations Admin Orders"
+      "name": "Admin Orders"
     },
     {
-      "name": "Integrations Admin Discounts"
+      "name": "Admin Discounts"
     },
     {
-      "name": "Integrations Admin Shipping"
+      "name": "Admin Shipping"
     },
     {
-      "name": "Integrations Admin Shipments"
+      "name": "Admin Shipments"
     },
     {
-      "name": "Integrations Admin Carriers"
+      "name": "Admin Carriers"
     },
     {
-      "name": "Integrations Admin Payments"
+      "name": "Admin Payments"
     },
     {
-      "name": "Integrations Admin Customers"
+      "name": "Admin Customers"
     },
     {
-      "name": "Integrations Admin Themes"
+      "name": "Admin Themes"
     },
     {
-      "name": "Integrations Admin Settings"
+      "name": "Admin Settings"
     },
     {
-      "name": "Integrations Admin Marketing"
+      "name": "Admin Marketing"
     },
     {
-      "name": "Integrations Admin Dashboard"
+      "name": "Admin Dashboard"
     },
     {
-      "name": "Integrations Admin Notifications"
+      "name": "Admin Notifications"
     },
     {
-      "name": "Integrations Admin Team"
+      "name": "Admin Team"
     },
     {
-      "name": "Integrations Admin Subscribers"
+      "name": "Admin Subscribers"
     }
   ],
   "servers": [
@@ -7563,6 +7908,28 @@
           }
         }
       },
+      "BulkDeleteDto": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "description": "IDs of resources to delete",
+            "example": [
+              1,
+              2,
+              3
+            ],
+            "minItems": 1,
+            "maxItems": 100,
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "required": [
+          "ids"
+        ]
+      },
       "SubCategoryDto": {
         "type": "object",
         "properties": {
@@ -8496,7 +8863,7 @@
             ],
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "number"
             }
           }
         },
@@ -8535,7 +8902,7 @@
             ],
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "number"
             }
           }
         }
