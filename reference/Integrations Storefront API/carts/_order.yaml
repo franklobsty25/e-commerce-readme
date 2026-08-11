@@ -1,0 +1,5 @@
+- cartsintegrationscontroller_create
+- cartsintegrationscontroller_findall
+- cartsintegrationscontroller_findone
+- cartsintegrationscontroller_update
+- cartsintegrationscontroller_delete
