@@ -1,0 +1,8 @@
+- discountsadminintegrationscontroller_findall
+- discountsadminintegrationscontroller_create
+- discountsadminintegrationscontroller_getstats
+- discountsadminintegrationscontroller_exportdiscounts
+- discountsadminintegrationscontroller_findone
+- discountsadminintegrationscontroller_update
+- discountsadminintegrationscontroller_remove
+- discountsadminintegrationscontroller_bulkremove
