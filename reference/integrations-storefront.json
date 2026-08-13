@@ -1460,14 +1460,6 @@
               "example": "dress",
               "type": "string"
             }
-          },
-          {
-            "name": "customerSessionId",
-            "required": false,
-            "in": "query",
-            "schema": {
-              "example": "Fu_6hcTuTMwY5sjYDTOLcD94JZE9SFLy"
-            }
           }
         ],
         "responses": {
@@ -4431,12 +4423,13 @@
             "type": "string",
             "example": "WH-1000"
           },
-          "imageUrls": {
+          "fileUrls": {
             "example": [
               "https://cdn.example.com/products/wireless-headphones/front.jpg",
-              "https://cdn.example.com/products/wireless-headphones/side.jpg"
+              "https://cdn.example.com/products/wireless-headphones/side.jpg",
+              "https://cdn.example.com/products/wireless-headphones/video.mp4"
             ],
-            "description": "Variant image URLs from frontend uploader (first item is primary)",
+            "description": "Variant file URLs from frontend uploader (first item is primary)",
             "type": "array",
             "items": {
               "type": "string"
@@ -4472,6 +4465,10 @@
             "type": "number",
             "example": 199.99
           },
+          "compareAtPrice": {
+            "type": "number",
+            "example": 249.99
+          },
           "totalStock": {
             "type": "number",
             "example": 25
@@ -4496,18 +4493,6 @@
           "collectionId": {
             "type": "number",
             "example": 1
-          },
-          "fileUrls": {
-            "example": [
-              "https://cdn.example.com/products/wireless-headphones/manual.pdf",
-              "https://cdn.example.com/products/wireless-headphones/image.jpg",
-              "https://cdn.example.com/products/wireless-headphones/video.mp4"
-            ],
-            "description": "Optional product file URLs (manuals, images, videos, etc. Max 20 files)",
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "variants": {
             "type": "array",
@@ -4551,6 +4536,10 @@
             "type": "number",
             "example": 199.99
           },
+          "compareAtPrice": {
+            "type": "number",
+            "example": 249.99
+          },
           "totalStock": {
             "type": "number",
             "example": 25
@@ -4575,18 +4564,6 @@
           "collectionId": {
             "type": "number",
             "example": 1
-          },
-          "fileUrls": {
-            "example": [
-              "https://cdn.example.com/products/wireless-headphones/manual.pdf",
-              "https://cdn.example.com/products/wireless-headphones/image.jpg",
-              "https://cdn.example.com/products/wireless-headphones/video.mp4"
-            ],
-            "description": "Optional product file URLs (manuals, images, videos, etc. Max 20 files)",
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "variants": {
             "type": "array",
