@@ -845,6 +845,330 @@
         ]
       }
     },
+    "/integrations/admin/themes": {
+      "get": {
+        "operationId": "ThemeCatalogIntegrationsController_getOverview",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "search",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "example": "vogue",
+              "type": "string"
+            }
+          },
+          {
+            "name": "category",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "example": "all",
+              "type": "string",
+              "enum": [
+                "all",
+                "fashion",
+                "electronics",
+                "minimalist"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "List Theme Store catalog + published theme",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      }
+    },
+    "/integrations/admin/themes/generate": {
+      "post": {
+        "operationId": "ThemeCatalogIntegrationsController_generate",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateThemeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Generate a store-scoped theme with Claude",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      }
+    },
+    "/integrations/admin/themes/{id}": {
+      "get": {
+        "operationId": "ThemeCatalogIntegrationsController_getOne",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": "tech-matrix",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Get a Theme Store catalog theme by handle",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      }
+    },
+    "/integrations/admin/themes/{id}/publish": {
+      "post": {
+        "operationId": "ThemeCatalogIntegrationsController_publish",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": "tech-matrix",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Publish a catalog theme to the storefront",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      }
+    },
+    "/integrations/admin/themes/{id}/reviews": {
+      "get": {
+        "operationId": "ThemeCatalogIntegrationsController_listReviews",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": "tech-matrix",
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "example": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "example": 20,
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "List reviews for a catalog theme",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      },
+      "post": {
+        "operationId": "ThemeCatalogIntegrationsController_createReview",
+        "parameters": [
+          {
+            "name": "X-Api-Key",
+            "in": "header",
+            "description": "Store API key or OAuth Bearer token",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "example": "tech-matrix",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateThemeReviewDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "security": [
+          {
+            "ApiKey": []
+          },
+          {
+            "ApiKey": [],
+            "StoreSlug": []
+          },
+          {
+            "ApiKey": [],
+            "StoreId": []
+          }
+        ],
+        "summary": "Add a review for a catalog theme",
+        "tags": [
+          "Admin Theme Catalog"
+        ]
+      }
+    },
     "/integrations/admin/customers": {
       "get": {
         "operationId": "CustomersAdminIntegrationsController_list",
@@ -6017,6 +6341,9 @@
       "name": "Admin Themes"
     },
     {
+      "name": "Admin Theme Catalog"
+    },
+    {
       "name": "Admin Settings"
     },
     {
@@ -6037,7 +6364,7 @@
   ],
   "servers": [
     {
-      "url": "http://localhost:3000/api/v1"
+      "url": "https://unwayward-trisepalous-ricky.ngrok-free.dev/api/v1"
     }
   ],
   "components": {
@@ -7438,6 +7765,44 @@
             }
           }
         }
+      },
+      "GenerateThemeDto": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "example": "A clean fashion boutique with bold typography and soft neutrals"
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      },
+      "CreateThemeReviewDto": {
+        "type": "object",
+        "properties": {
+          "sentiment": {
+            "type": "string",
+            "enum": [
+              "positive",
+              "neutral",
+              "negative"
+            ],
+            "example": "positive"
+          },
+          "body": {
+            "type": "string",
+            "example": "Great theme — fast and easy to customize."
+          },
+          "author": {
+            "type": "string",
+            "example": "John Wills"
+          }
+        },
+        "required": [
+          "sentiment",
+          "body"
+        ]
       },
       "CustomerRegisterDto": {
         "type": "object",

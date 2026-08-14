@@ -1,0 +1,6 @@
+- themecatalogintegrationscontroller_getoverview
+- themecatalogintegrationscontroller_generate
+- themecatalogintegrationscontroller_getone
+- themecatalogintegrationscontroller_publish
+- themecatalogintegrationscontroller_listreviews
+- themecatalogintegrationscontroller_createreview
