@@ -82,7 +82,7 @@ Scopes are enforced per route. Common patterns:
 | Inventory sync    | `products:read`, `products:write`                                                                  |
 | Full access       | `*`                                                                                                |
 
-See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor> for the full list.
+See [Authentication](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication) for the full list.
 
 ## Rotation
 
@@ -94,6 +94,6 @@ There is no “reveal again” endpoint for the raw secret.
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/quickstart">Quickstart</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/oauth-apps">OAuth Apps</Anchor> — for multi-merchant partner apps
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits">Rate Limits</Anchor>
+- [Quickstart](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/quickstart)
+- [OAuth Apps](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/oauth-apps) — for multi-merchant partner apps
+- [Rate Limits](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits)
