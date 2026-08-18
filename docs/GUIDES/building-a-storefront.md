@@ -75,13 +75,40 @@ GET  /api/v1/integrations/currencies
 
 Scope: `storefront:read`.
 
-## 4. Cart and checkout
+## 4. Optional customer account
+
+Shopper register/login is on Integrations Storefront (`storefront:read`). Store context comes from the API key — `X-Store-Slug` is not required.
+
+```http
+POST /api/v1/integrations/auth/customer/register
+POST /api/v1/integrations/auth/customer/login
+X-Api-Key: sk_test_...
+```
+
+The response includes `access_token`. Send it on later requests as the customer JWT, with the store key in `X-Api-Key`:
+
+```http
+GET /api/v1/integrations/auth/customer/me
+GET /api/v1/integrations/customers/me/addresses
+GET /api/v1/integrations/customers/me/orders
+POST /api/v1/integrations/auth/customer/logout
+X-Api-Key: sk_test_...
+Authorization: Bearer <customer_jwt>
+```
+
+Logout returns `{ "loggedOut": true }` and revokes that customer JWT. Stop sending it afterwards.
+
+Guest checkout still works without an account.
+
+## 5. Cart and checkout
 
 ```http
 POST /api/v1/integrations/carts
 PATCH /api/v1/integrations/carts/{id}
 POST /api/v1/integrations/orders
 ```
+
+To attach the cart or order to a logged-in customer, send the same dual headers (X-Api-Key + customer JWT). Otherwise, send X-Session-Id for a guest cart.
 
 See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor> for the full order body (including required `variants` on each item).
 
