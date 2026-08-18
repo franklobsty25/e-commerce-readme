@@ -46,13 +46,15 @@ External developers should prefer the Integrations API. Do not use guest session
 
 ## Multi-tenant store context
 
-Every request is scoped to a single store. Provide store context with:
+Every request is scoped to a single store. For Integrations, the API key or OAuth token already binds the store — you do not need `X-Store-*` headers. If you do send `X-Store-Slug`, `X-Store-Id`, or hit a Host that resolves a store, it must match the credential or the request returns `403 Forbidden`.
+
+Cookie storefront and other tenant routes that are not Integrations still resolve store via:
 
 - `X-Store-Slug` (preferred), or
 - `X-Store-Id` (store `publicId` UUID), or
 - a Host / custom domain that already resolves to a store
 
-API keys and OAuth tokens are also bound to a store. Missing store context on tenant routes returns `400 Bad Request`.
+Missing store context on those non-Integrations tenant routes returns `400 Bad Request`.
 
 ## Next steps
 
