@@ -63,7 +63,7 @@ Content-Type: application/json
 }
 ```
 
-If `webhookUrl` is provided, the platform registers an outbound webhook for topic `orders/create`. See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>.
+If `webhookUrl` is provided, the platform registers an outbound webhook for topic `orders/create`. See [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks).
 
 ## 4. Authorize
 
@@ -138,6 +138,6 @@ Uninstall revokes tokens and deactivates related webhook subscriptions for that 
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/api-keys">API Keys</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
+- [Authentication](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication)
+- [API Keys](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/api-keys)
+- [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks)
