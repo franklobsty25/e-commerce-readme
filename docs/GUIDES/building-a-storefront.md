@@ -110,7 +110,7 @@ POST /api/v1/integrations/orders
 
 To attach the cart or order to a logged-in customer, send the same dual headers (X-Api-Key + customer JWT). Otherwise, send X-Session-Id for a guest cart.
 
-See <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor> for the full order body (including required `variants` on each item).
+See [Creating Orders](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders) for the full order body (including required `variants` on each item).
 
 ## 5. Shipping and discounts
 
@@ -122,7 +122,7 @@ Use Storefront shipping and discounts endpoints to quote rates and validate code
 2. Redirect the shopper
 3. `GET /api/v1/integrations/payments/verify/{reference}`
 
-Details: <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments">Processing Payments</Anchor>.
+Details: [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments).
 
 ## Security notes
 
@@ -132,7 +132,7 @@ Details: <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_G
 
 ## Related guides
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-products">Managing Products</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders">Creating Orders</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments">Processing Payments</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
+- [Managing Products](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-products)
+- [Creating Orders](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/creating-orders)
+- [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments)
+- [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks)
