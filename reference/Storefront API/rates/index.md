@@ -1,4 +1,0 @@
----
-title: Rates
-hidden: false
----

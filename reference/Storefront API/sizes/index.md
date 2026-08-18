@@ -1,4 +1,0 @@
----
-title: Sizes
-hidden: false
----
