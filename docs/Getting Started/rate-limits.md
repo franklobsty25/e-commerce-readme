@@ -42,9 +42,9 @@ Content-Type: application/json
 - Cache catalog reads when possible
 - Back off with jitter on `429`
 - Prefer a dedicated API key per integration so limits are not shared with browser traffic by IP
-- Use webhooks for order events instead of tight polling (see <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>)
+- Use webhooks for order events instead of tight polling (see [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks))
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/errors">Errors</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor>
+- [Errors](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/errors)
+- [Authentication](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication)
