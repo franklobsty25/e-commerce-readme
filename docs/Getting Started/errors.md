@@ -20,14 +20,14 @@ metadata:
 
 ## Common status codes
 
-| Status                      | Typical cause                                                                                                                                 |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `400 Bad Request`           | Missing/invalid store context, validation errors, bad input                                                                                   |
-| `401 Unauthorized`          | Missing/invalid API key or OAuth token; revoked/expired key                                                                                   |
-| `403 Forbidden`             | Authenticated but missing required scopes                                                                                                     |
-| `404 Not Found`             | Unknown resource for this store                                                                                                               |
-| `429 Too Many Requests`     | Rate limit exceeded (see <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits">Rate Limits</Anchor>) |
-| `500 Internal Server Error` | Unexpected server failure                                                                                                                     |
+| Status                      | Typical cause                                                                                            |
+| --------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `400 Bad Request`           | Missing/invalid store context, validation errors, bad input                                              |
+| `401 Unauthorized`          | Missing/invalid API key or OAuth token; revoked/expired key                                              |
+| `403 Forbidden`             | Authenticated but missing required scopes                                                                |
+| `404 Not Found`             | Unknown resource for this store                                                                          |
+| `429 Too Many Requests`     | Rate limit exceeded (see [Rate Limits](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits)) |
+| `500 Internal Server Error` | Unexpected server failure                                                                                |
 
 ## Auth and scope examples
 
@@ -66,5 +66,5 @@ Invalid JSON bodies or fields that fail class-validator rules return `400` with 
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication">Authentication</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits">Rate Limits</Anchor>
+- [Authentication](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/authentication)
+- [Rate Limits](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/rate-limits)
