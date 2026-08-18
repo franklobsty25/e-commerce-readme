@@ -155,12 +155,12 @@ GET /api/v1/integrations/admin/orders/{orderNumber}
 Successful order creation may:
 
 1. Return payment redirect/provider details for the shopper
-2. Dispatch outbound webhook topic `orders/create` to installed apps (see <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>)
+2. Dispatch outbound webhook topic `orders/create` to installed apps (see [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks))
 
 Continue with [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments) to verify payment status.
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments">Processing Payments</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront">Building a Storefront</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks">Webhooks</Anchor>
+- [Processing Payments](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/processing-payments)
+- [Building a Storefront](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront)
+- [Webhooks](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/webhooks)
