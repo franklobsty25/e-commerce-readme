@@ -22,10 +22,10 @@ or
 Authorization: Bearer sk_test_...
 ```
 
-| Prefix     | Environment                       |
-| ---------- | --------------------------------- |
-| `sk_test_` | Non-production                    |
-| `sk_live_` | Production (`APP_ENV=production`) |
+| Prefix     | Environment    |
+| ---------- | -------------- |
+| `sk_test_` | Non-production |
+| `sk_live_` | Production     |
 
 Keys are stored as hashes. The raw secret is shown only at creation time. Revoked, expired, or suspended keys return `401 Unauthorized`.
 
@@ -78,6 +78,7 @@ settings:read / settings:write
 themes:read / themes:write
 marketing:read / marketing:write
 notifications:read / notifications:write
+team:read / team:write
 subscribers:read
 dashboard:read
 storefront:read
@@ -85,28 +86,62 @@ rates:read / rates:write
 *
 ```
 
-Cart endpoints use order scopes (`orders:read` / `orders:write`).
+Cart endpoints use order scopes (`orders:read` / `orders:write`). Storefront customer register/login/profile uses `storefront:read`. Merchant customer list/disable uses `customers:read` / `customers:write` on Admin Integrations.
+
+## Customer JWT (optional shopper identity)
+
+Customer account endpoints live on Integrations Storefront:
+
+```text
+POST /api/v1/integrations/auth/customer/register
+POST /api/v1/integrations/auth/customer/login
+POST /api/v1/integrations/auth/customer/logout
+GET  /api/v1/integrations/auth/customer/me
+GET  /api/v1/integrations/customers/me/addresses
+GET  /api/v1/integrations/customers/me/orders
+```
+
+Login and register authenticate the **store** with an API key or OAuth token. They return a customer JWT (`role: customer`). Authenticated customer routes and optional cart/checkout identity use **two headers**:
+
+```http
+X-Api-Key: sk_test_...
+Authorization: Bearer <customer_jwt>
+```
+
+Do not put the API key and the customer JWT in the same `Authorization` header. A customer JWT alone on `/integrations/*` returns `401 Unauthorized` because `IntegrationAuthGuard` treats Bearer as an OAuth token.
+
+Cart create and checkout (`POST /integrations/carts`, `POST /integrations/orders`) accept the same optional customer JWT. Without it, those routes stay guest-session based (`X-Session-Id`).
+
+OAuth apps that also need a shopper JWT must send an API key in `X-Api-Key` for authenticated customer and cart/checkout calls (Bearer is occupied by the JWT).
+
+Logout uses the same dual headers:
+
+```http
+POST /api/v1/integrations/auth/customer/logout
+X-Api-Key: sk_test_...
+Authorization: Bearer <customer_jwt>
+```
+
+The response is `{ "loggedOut": true }`. The current customer JWT is revoked server-side and later requests with that token return `401 Unauthorized`. After logout, drop the JWT on the client. Cart and checkout without it stay guest-session based (`X-Session-Id`).
 
 ## Store context
 
-In addition to auth, tenant-scoped routes need a store:
+API keys and OAuth installations are bound to one store. Integrations routes take the tenant from that credential — store headers are not required.
 
-| Header         | Description                         |
-| -------------- | ----------------------------------- |
-| `X-Store-Slug` | Preferred human-readable store slug |
-| `X-Store-Id`   | Store `publicId` (UUID)             |
+| Header         | Description                                          |
+| -------------- | ---------------------------------------------------- |
+| `X-Store-Slug` | Optional; must match the credential store if sent    |
+| `X-Store-Id`   | Optional store `publicId` (UUID); must match if sent |
 
-If the request Host already maps to a store (custom domain or `{slug}.{PLATFORM_HOST}`), headers may be omitted.
-
-API keys and OAuth installations are already bound to one store; headers disambiguate when Host does not resolve a tenant.
+If Host already maps to a store and it differs from the key/token store, the request returns `403 Forbidden`.
 
 ## What not to use
 
-| Scheme                                    | Audience                                    |
-| ----------------------------------------- | ------------------------------------------- |
-| Merchant JWT                              | Merchant dashboard Admin API only           |
-| Guest cookie `guest.sid` / session Bearer | Cookie storefront, not Integrations         |
-| Customer JWT                              | Customer account endpoints on the Store API |
+| Scheme                                         | Audience                                                                             |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Merchant JWT                                   | Merchant dashboard Admin API only                                                    |
+| Guest cookie `guest.sid` / session Bearer      | Cookie storefront, not Integrations                                                  |
+| Customer JWT in Bearer **without** `X-Api-Key` | Store API customer accounts only; Integrations requires the store key in `X-Api-Key` |
 
 ## Related
 
