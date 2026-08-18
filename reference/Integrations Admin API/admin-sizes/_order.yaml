@@ -1,0 +1,6 @@
+- sizesadminintegrationscontroller_findall
+- sizesadminintegrationscontroller_create
+- sizesadminintegrationscontroller_findone
+- sizesadminintegrationscontroller_update
+- sizesadminintegrationscontroller_delete
+- sizesadminintegrationscontroller_bulkdelete

@@ -1,0 +1,6 @@
+- colorsadminintegrationscontroller_findall
+- colorsadminintegrationscontroller_create
+- colorsadminintegrationscontroller_findone
+- colorsadminintegrationscontroller_update
+- colorsadminintegrationscontroller_delete
+- colorsadminintegrationscontroller_bulkdelete
