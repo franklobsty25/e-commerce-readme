@@ -72,11 +72,11 @@ Product images are attached through Admin product image endpoints. Uploaded file
 
 ## Inventory
 
-Stock and availability updates are covered in <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-inventory">Managing Inventory</Anchor>.
+Stock and availability updates are covered in [Managing Inventory](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-inventory).
 
 ## Related
 
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-inventory">Managing Inventory</Anchor>
-- <Anchor target="_blank" href="https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront">Building a Storefront</Anchor>
+- [Managing Inventory](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/managing-inventory)
+- [Building a Storefront](https://benchfive-commer.readme.io/v1.0_GUIDES/docs/building-a-storefront)
 - Admin OpenAPI tag: **Integrations Admin Products**
 - Storefront OpenAPI tag: **Integrations Products**
